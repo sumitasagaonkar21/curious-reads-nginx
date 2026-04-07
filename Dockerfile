@@ -14,7 +14,9 @@ COPY nginx.conf /etc/nginx/
 # COPY email-server.conf /etc/nginx/conf.d/
 # COPY scalaix-backend-server.conf /etc/nginx/conf.d/
 # COPY scalaix-fe-server.conf /etc/nginx/conf.d/
-COPY nginx1.conf /etc/nginx/conf.d/
+# COPY nginx1.conf /etc/nginx/conf.d/
+COPY camp_nginx.conf /etc/nginx/conf.d/
+
 # COPY backend-server.conf /etc/nginx/conf.d/
 RUN mkdir etc/nginx/ssl
 
